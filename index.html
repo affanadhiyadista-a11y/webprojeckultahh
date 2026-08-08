@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Gift ✨</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         PASSWORD SCREEN
+    ========================================== -->
+
+    <div id="lockScreen" class="lock-screen">
+
+        <!-- Background decoration -->
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="orb orb-three"></div>
+
+        <div class="stars" id="stars"></div>
+
+        <div class="lock-container">
+
+            <div class="lock-badge">
+                <span>PRIVATE GIFT</span>
+            </div>
+
+            <div class="lock-icon">
+                <div class="lock-shackle"></div>
+                <div class="lock-body">
+                    <span>✦</span>
+                </div>
+            </div>
+
+            <p class="eyebrow">
+                A LITTLE SURPRISE
+            </p>
+
+            <h1>
+                Someone prepared<br>
+                something <span>special</span>.
+            </h1>
+
+            <p class="lock-description">
+                Halaman ini hanya bisa dibuka dengan
+                password yang tepat.
+            </p>
+
+            <div class="password-wrapper">
+
+                <div class="input-container">
+
+                    <span class="input-icon">🔑</span>
+
+                    <input
+                        type="password"
+                        id="passwordInput"
+                        placeholder="Enter password"
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="button"
+                        id="showPassword"
+                        class="show-password"
+                    >
+                        👁
+                    </button>
+
+                </div>
+
+                <button
+                    id="unlockButton"
+                    class="unlock-button"
+                >
+                    <span>Unlock Gift</span>
+                    <span class="arrow">→</span>
+                </button>
+
+                <p
+                    id="errorMessage"
+                    class="error-message"
+                ></p>
+
+            </div>
+
+            <p class="hint">
+                ✨ A special moment awaits inside
+            </p>
+
+        </div>
+
+        <div class="lock-footer">
+            <span>Made with</span>
+            <span class="footer-heart">♥</span>
+            <span>for a special day</span>
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         MAIN WEBSITE
+    ========================================== -->
+
+    <main id="mainContent" class="main-content">
+
+        <!-- Navigation -->
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <span class="logo-star">✦</span>
+                Birthday<span>Gift</span>
+            </div>
+
+            <div class="nav-status">
+                <span class="status-dot"></span>
+                A special day
+            </div>
+
+        </nav>
+
+
+        <!-- Hero -->
+
+        <section class="hero">
+
+            <div class="hero-glow glow-one"></div>
+            <div class="hero-glow glow-two"></div>
+
+            <div class="hero-content">
+
+                <div class="date-badge">
+                    <span>✦</span>
+                    TODAY IS YOUR DAY
+                    <span>✦</span>
+                </div>
+
+                <div class="birthday-cake">
+                    🎂
+                </div>
+
+                <p class="hero-small">
+                    HAPPY BIRTHDAY
+                </p>
+
+                <h1>
+                    Make a wish,<br>
+                    <span>make it happen.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Hari ini adalah hari spesial.
+                    Semoga tahun baru dalam hidupmu
+                    dipenuhi dengan kebahagiaan,
+                    pengalaman indah, dan banyak
+                    alasan untuk tersenyum.
+                </p>
+
+                <button
+                    id="surpriseButton"
+                    class="surprise-button"
+                >
+                    <span class="button-icon">🎁</span>
+                    Open Your Surprise
+                    <span>→</span>
+                </button>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span></span>
+                SCROLL TO DISCOVER
+            </div>
+
+        </section>
+
+
+        <!-- Message -->
+
+        <section
+            id="messageSection"
+            class="message-section"
+        >
+
+            <div class="section-label">
+                01 — A MESSAGE
+            </div>
+
+            <div class="message-grid">
+
+                <div class="message-heading">
+
+                    <p>
+                        A few words
+                    </p>
+
+                    <h2>
+                        For your<br>
+                        <span>special day.</span>
+                    </h2>
+
+                </div>
+
+                <div class="message-card">
+
+                    <div class="quote-mark">
+                        “
+                    </div>
+
+                    <p>
+                        Selamat ulang tahun! 🎉
+                    </p>
+
+                    <p>
+                        Semoga setiap langkah yang kamu
+                        ambil membawa kamu lebih dekat
+                        dengan semua impianmu.
+                    </p>
+
+                    <p>
+                        Jangan lupa untuk menikmati setiap
+                        proses, menghargai orang-orang yang
+                        selalu mendukungmu, dan terus
+                        menjadi versi terbaik dari dirimu.
+                    </p>
+
+                    <div class="message-signature">
+                        With love <span>♥</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Memories -->
+
+        <section class="memories-section">
+
+            <div class="section-label">
+                02 — MEMORIES
+            </div>
+
+            <div class="section-title">
+
+                <h2>
+                    Little moments,<br>
+                    <span>big memories.</span>
+                </h2>
+
+                <p>
+                    Beberapa ruang untuk menyimpan
+                    momen-momen favorit.
+                </p>
+
+            </div>
+
+            <div class="memory-grid">
+
+                <div class="memory-card large">
+                    <div class="memory-image">
+                        <span>📸</span>
+                    </div>
+
+                    <div class="memory-info">
+                        <span>MEMORY 01</span>
+                        <h3>A Beautiful Moment</h3>
+                    </div>
+                </div>
+
+                <div class="memory-card">
+                    <div class="memory-image">
+                        <span>🎈</span>
+                    </div>
+
+                    <div class="memory-info">
+                        <span>MEMORY 02</span>
+                        <h3>Good Times</h3>
+                    </div>
+                </div>
+
+                <div class="memory-card">
+                    <div class="memory-image">
+                        <span>✨</span>
+                    </div>
+
+                    <div class="memory-info">
+                        <span>MEMORY 03</span>
+                        <h3>Keep Smiling</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Final -->
+
+        <section class="final-section">
+
+            <div class="final-glow"></div>
+
+            <div class="final-content">
+
+                <span class="final-icon">
+                    ✨
+                </span>
+
+                <p>
+                    ONE MORE THING
+                </p>
+
+                <h2>
+                    Here's to another<br>
+                    <span>beautiful year.</span>
+                </h2>
+
+                <div class="big-heart">
+                    ♥
+                </div>
+
+                <button
+                    id="celebrateButton"
+                    class="celebrate-button"
+                >
+                    🎉 Celebrate!
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer>
+
+            <div class="footer-logo">
+                ✦ BirthdayGift
+            </div>
+
+            <p>
+                Made specially for a special birthday.
+            </p>
+
+            <div class="footer-line"></div>
+
+            <small>
+                © 2026 • Made with ♥
+            </small>
+
+        </footer>
+
+    </main>
+
+
+    <!-- Confetti -->
+
+    <div
+        id="confettiContainer"
+        class="confetti-container"
+    ></div>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
